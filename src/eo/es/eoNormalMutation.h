@@ -167,7 +167,7 @@ public:
   double & Sigma() {return sigma;}
 
 private:
-  double & sigma;
+  double sigma;
   eoRealVectorBounds & bounds;
   double p_change;
 };
