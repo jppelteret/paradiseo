@@ -2,7 +2,7 @@
 ### 0) Look for headers
 ######################################################################################
 
-install(FILES mo.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
+install(FILES mo_headers.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
 
 ######################################################################################
 ### 1) Install directories

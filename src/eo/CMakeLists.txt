@@ -102,7 +102,7 @@ set(HDRS
   eoGenContinue.h
   eoGeneralBreeder.h
   eoGenOp.h
-  eo_headers.h
+  #eo_headers.h
   EO.h
   eoInit.h
   eoInitializer.h
@@ -201,7 +201,7 @@ set(HDRS
   PO.h 
 )
 
-install(FILES eo.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
+install(FILES eo_headers.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
 install(FILES ${HDRS} DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG}/eo COMPONENT headers)
 install(DIRECTORY do es ga gp other utils
         DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG}/eo

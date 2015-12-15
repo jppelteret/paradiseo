@@ -42,7 +42,7 @@ set(HDRS
 	edoEstimatorNormalMono.h
 	edoEstimatorNormalMulti.h
 	edoEstimatorUniform.h
-	#edo.h
+	#edo_headers.h
 	edoModifierDispersion.h
 	edoModifier.h
 	edoModifierMass.h
@@ -69,7 +69,7 @@ set(HDRS
 	edoVectorBounds.h
 )
 
-install(FILES edo.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
+install(FILES edo_headers.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
 
 install(FILES ${HDRS} DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG}/edo COMPONENT headers)
 

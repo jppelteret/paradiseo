@@ -26,12 +26,10 @@ install(TARGETS eoserial ARCHIVE DESTINATION ${LIB} COMPONENT libraries)
 ### 4) Look for headers
 ######################################################################################
 
-install(FILES eoserial.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
-
 #file(GLOB HDRS *.h)
 set(HDRS 
 	eoSerial.h
-  eoSerial_headers.h
+	#eoSerial_headers.h
 	Utils.h
 	SerialArray.h
 	Parser.h
@@ -41,6 +39,8 @@ set(HDRS
 	SerialString.h
 	Entity.h
 )
+
+install(FILES eoSerial_headers.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
 
 install(FILES ${HDRS} DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG}/eoserial COMPONENT headers)
 

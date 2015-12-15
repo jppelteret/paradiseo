@@ -23,7 +23,7 @@ set(EOMPI_SOURCES
 add_library(eompi STATIC ${EOMPI_SOURCES})
 install(TARGETS eompi ARCHIVE DESTINATION ${LIB} COMPONENT libraries)
 
-install(FILES eompi.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
+install(FILES eoMpi_headers.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
 
 #file(GLOB HDRS *.h)
 set(HDRS 
@@ -31,7 +31,7 @@ set(HDRS
 	eoMpiNode.h
 	eoParallelApply.h
 	eoMpi.h
-  eoMpi_headers.h
+	#eoMpi_headers.h
 	eoMultiStart.h
 	eoTerminateJob.h
 	eoMpiAssignmentAlgorithm.h

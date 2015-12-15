@@ -30,7 +30,7 @@ install(TARGETS moeo ARCHIVE DESTINATION ${LIB} COMPONENT libraries)
 ### 3) Look for headers
 ######################################################################################
 
-install(FILES moeo.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
+install(FILES moeo_headers.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
 
 ######################################################################################
 ### 4) Install directories

@@ -42,7 +42,7 @@ install(TARGETS smp ARCHIVE DESTINATION ${LIB} COMPONENT libraries)
 ### 3) Look for headers
 ######################################################################################
 
-install(FILES smp.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
+install(FILES smp_headers.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
 
 #file(GLOB HDRS smp *.h *.cpp)
 set(HDRS
