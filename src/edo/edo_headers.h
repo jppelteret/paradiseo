@@ -28,67 +28,67 @@ Authors:
 #ifndef _edo_
 #define _edo_
 
-#include "edo/edoAlgo.h"
-//#include "edo/edoEDASA.h"
-#include "edo/edoAlgoAdaptive.h"
-#include "edo/edoAlgoStateless.h"
+#include <paradiseo/edo/edoAlgo.h>
+//#include <paradiseo/edo/edoEDASA.h>
+#include <paradiseo/edo/edoAlgoAdaptive.h>
+#include <paradiseo/edo/edoAlgoStateless.h>
 
-#include "edo/edoDistrib.h"
-#include "edo/edoUniform.h"
-#include "edo/edoNormalMono.h"
-#include "edo/edoNormalMulti.h"
-#include "edo/edoNormalAdaptive.h"
-#include "edo/edoBinomial.h"
-#include "edo/edoBinomialMulti.h"
+#include <paradiseo/edo/edoDistrib.h>
+#include <paradiseo/edo/edoUniform.h>
+#include <paradiseo/edo/edoNormalMono.h>
+#include <paradiseo/edo/edoNormalMulti.h>
+#include <paradiseo/edo/edoNormalAdaptive.h>
+#include <paradiseo/edo/edoBinomial.h>
+#include <paradiseo/edo/edoBinomialMulti.h>
 
-#include "edo/edoEstimator.h"
-#include "edo/edoEstimatorUniform.h"
-#include "edo/edoEstimatorNormalMono.h"
-#include "edo/edoEstimatorNormalMulti.h"
-#include "edo/edoEstimatorAdaptive.h"
-#include "edo/edoEstimatorNormalAdaptive.h"
-#include "edo/edoEstimatorBinomial.h"
-#include "edo/edoEstimatorBinomialMulti.h"
+#include <paradiseo/edo/edoEstimator.h>
+#include <paradiseo/edo/edoEstimatorUniform.h>
+#include <paradiseo/edo/edoEstimatorNormalMono.h>
+#include <paradiseo/edo/edoEstimatorNormalMulti.h>
+#include <paradiseo/edo/edoEstimatorAdaptive.h>
+#include <paradiseo/edo/edoEstimatorNormalAdaptive.h>
+#include <paradiseo/edo/edoEstimatorBinomial.h>
+#include <paradiseo/edo/edoEstimatorBinomialMulti.h>
 
-#include "edo/edoModifier.h"
-#include "edo/edoModifierDispersion.h"
-#include "edo/edoModifierMass.h"
-#include "edo/edoUniformCenter.h"
-#include "edo/edoNormalMonoCenter.h"
-#include "edo/edoNormalMultiCenter.h"
+#include <paradiseo/edo/edoModifier.h>
+#include <paradiseo/edo/edoModifierDispersion.h>
+#include <paradiseo/edo/edoModifierMass.h>
+#include <paradiseo/edo/edoUniformCenter.h>
+#include <paradiseo/edo/edoNormalMonoCenter.h>
+#include <paradiseo/edo/edoNormalMultiCenter.h>
 
-#include "edo/edoSampler.h"
-#include "edo/edoSamplerUniform.h"
-#include "edo/edoSamplerNormalMono.h"
-#include "edo/edoSamplerNormalMulti.h"
-#include "edo/edoSamplerNormalAdaptive.h"
-#include "edo/edoSamplerBinomial.h"
-#include "edo/edoSamplerBinomialMulti.h"
+#include <paradiseo/edo/edoSampler.h>
+#include <paradiseo/edo/edoSamplerUniform.h>
+#include <paradiseo/edo/edoSamplerNormalMono.h>
+#include <paradiseo/edo/edoSamplerNormalMulti.h>
+#include <paradiseo/edo/edoSamplerNormalAdaptive.h>
+#include <paradiseo/edo/edoSamplerBinomial.h>
+#include <paradiseo/edo/edoSamplerBinomialMulti.h>
 
-#include "edo/edoVectorBounds.h"
+#include <paradiseo/edo/edoVectorBounds.h>
 
-#include "edo/edoRepairer.h"
-#include "edo/edoRepairerDispatcher.h"
-#include "edo/edoRepairerRound.h"
-#include "edo/edoRepairerModulo.h"
-#include "edo/edoBounder.h"
-#include "edo/edoBounderNo.h"
-#include "edo/edoBounderBound.h"
-#include "edo/edoBounderRng.h"
-#include "edo/edoBounderUniform.h"
+#include <paradiseo/edo/edoRepairer.h>
+#include <paradiseo/edo/edoRepairerDispatcher.h>
+#include <paradiseo/edo/edoRepairerRound.h>
+#include <paradiseo/edo/edoRepairerModulo.h>
+#include <paradiseo/edo/edoBounder.h>
+#include <paradiseo/edo/edoBounderNo.h>
+#include <paradiseo/edo/edoBounderBound.h>
+#include <paradiseo/edo/edoBounderRng.h>
+#include <paradiseo/edo/edoBounderUniform.h>
 
-#include "edo/edoContinue.h"
-#include "edo/utils/edoCheckPoint.h"
+#include <paradiseo/edo/edoContinue.h>
+#include <paradiseo/edo/utils/edoCheckPoint.h>
 
-#include "edo/utils/edoStat.h"
-#include "edo/utils/edoStatUniform.h"
-#include "edo/utils/edoStatNormalMono.h"
-#include "edo/utils/edoStatNormalMulti.h"
+#include <paradiseo/edo/utils/edoStat.h>
+#include <paradiseo/edo/utils/edoStatUniform.h>
+#include <paradiseo/edo/utils/edoStatNormalMono.h>
+#include <paradiseo/edo/utils/edoStatNormalMulti.h>
 
-#include "edo/utils/edoFileSnapshot.h"
-#include "edo/utils/edoPopStat.h"
+#include <paradiseo/edo/utils/edoFileSnapshot.h>
+#include <paradiseo/edo/utils/edoPopStat.h>
 
-#include "edo/edoTransform.h"
+#include <paradiseo/edo/edoTransform.h>
 
 #endif // !_edo_
 

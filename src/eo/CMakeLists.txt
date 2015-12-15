@@ -196,12 +196,13 @@ set(HDRS
   eoVelocity.h
   eoVelocityInit.h
   eoWeightUpdater.h
-  es.h
-  ga.h
   PO.h 
 )
 
-install(FILES eo_headers.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} COMPONENT headers)
+install(FILES eo_headers.h es_headers.h ga_headers.h 
+        DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG} 
+        COMPONENT headers)
+
 install(FILES ${HDRS} DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG}/eo COMPONENT headers)
 install(DIRECTORY do es ga gp other utils
         DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_TAG}/eo

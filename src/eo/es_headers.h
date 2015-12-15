@@ -36,28 +36,28 @@
 //-----------------------------------------------------------------------------
 
 // the genotypes - from plain std::vector<double> to full correlated mutation
-#include "es/eoReal.h"
-#include "es/eoEsSimple.h"
-#include "es/eoEsStdev.h"
-#include "es/eoEsFull.h"
+#include <paradiseo/eo/es/eoReal.h>
+#include <paradiseo/eo/es/eoEsSimple.h>
+#include <paradiseo/eo/es/eoEsStdev.h>
+#include <paradiseo/eo/es/eoEsFull.h>
 
 // the initialization
-#include "es/eoEsChromInit.h"
+#include <paradiseo/eo/es/eoEsChromInit.h>
 
 // general operators
-#include "es/eoRealOp.h"
-#include "es/eoNormalMutation.h"
-#include "es/eoRealAtomXover.h"	// for generic operators
+#include <paradiseo/eo/es/eoRealOp.h>
+#include <paradiseo/eo/es/eoNormalMutation.h>
+#include <paradiseo/eo/es/eoRealAtomXover.h>	// for generic operators
 
 // SBX crossover (following Deb)
-#include "es/eoSBXcross.h"
+#include <paradiseo/eo/es/eoSBXcross.h>
 
 // ES specific operators
-#include "es/eoEsGlobalXover.h" // Global ES Xover
-#include "es/eoEsStandardXover.h" // 2-parents ES Xover
+#include <paradiseo/eo/es/eoEsGlobalXover.h> // Global ES Xover
+#include <paradiseo/eo/es/eoEsStandardXover.h> // 2-parents ES Xover
 
 // the ES-mutations
-#include "es/eoEsMutationInit.h"
-#include "es/eoEsMutate.h"
+#include <paradiseo/eo/es/eoEsMutationInit.h>
+#include <paradiseo/eo/es/eoEsMutate.h>
 
 #endif
