@@ -31,6 +31,7 @@ set(HDRS
 	eoMpiNode.h
 	eoParallelApply.h
 	eoMpi.h
+  eoMpi_headers.h
 	eoMultiStart.h
 	eoTerminateJob.h
 	eoMpiAssignmentAlgorithm.h

@@ -31,6 +31,7 @@ install(FILES eoserial.h DESTINATION ${PROJECT_HDRS_INSTALL_SUBPATH}/${PROJECT_T
 #file(GLOB HDRS *.h)
 set(HDRS 
 	eoSerial.h
+  eoSerial_headers.h
 	Utils.h
 	SerialArray.h
 	Parser.h

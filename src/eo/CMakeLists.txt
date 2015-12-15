@@ -102,7 +102,7 @@ set(HDRS
   eoGenContinue.h
   eoGeneralBreeder.h
   eoGenOp.h
-  #eo.h
+  eo_headers.h
   EO.h
   eoInit.h
   eoInitializer.h
