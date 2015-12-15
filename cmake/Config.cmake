@@ -76,13 +76,13 @@ endif(ENABLE_CMAKE_TESTING)
 # required by t-eoParserBoost.cpp
 find_package( Boost 1.36.0 )
 if(Boost_FOUND)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS_DEBUG} -L ${Boost_INCLUDE_DIRS} -lboost_program_options -Wreorder")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS_DEBUG} -I${Boost_INCLUDE_DIRS} -Wreorder")
 
     if (UNIX OR CMAKE_COMPILER_IS_GNUCXX) 
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11") 
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11") 
     endif (UNIX OR CMAKE_COMPILER_IS_GNUCXX)
     if (APPLE)
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mmacosx-version-min=10.7")
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mmacosx-version-min=10.7 -stdlib=libc++")
     endif (APPLE) 
 endif(Boost_FOUND)
 
@@ -105,10 +105,10 @@ if(ENABLE_CXX11_RANDOM)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DHAVE_RANDOM") 
 
     if (UNIX OR CMAKE_COMPILER_IS_GNUCXX) 
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11") 
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11") 
     endif (UNIX OR CMAKE_COMPILER_IS_GNUCXX)
     if (APPLE)
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mmacosx-version-min=10.7")
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mmacosx-version-min=10.7 -stdlib=libc++")
     endif (APPLE)
 
     # For 64-bit random numbers

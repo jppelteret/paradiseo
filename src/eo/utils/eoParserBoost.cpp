@@ -117,9 +117,9 @@ void eoParserBoost::manageSectionsMaps(const std::string _section)
     if (!sections_map.count(_section))
     { // Add a new node to the "sections_map" and an other one to the "info_map" (which contains basic information about the parameters).
         po::options_description o_d(_section);
-        sections_map.insert({_section, o_d});
+        sections_map.insert(std::make_pair(_section, o_d));
         my_map m_m;
-        info_map.insert({_section, m_m});
+        info_map.insert(std::make_pair(_section, m_m));
     }                 
 }    
 
@@ -151,8 +151,12 @@ void eoParserBoost::saveInfo(const std::string _longName,
                              const std::string _section,
                              int               _position)
 {
+    std::vector< my_variant > vec;
+    vec.push_back(_shortHand);
+    vec.push_back(_description);
+    vec.push_back(_position);
     info_map.find(_section)->second
-            .insert({_longName, {_shortHand, _description, _position}});  
+            .insert(std::make_pair(_longName, std::vector< my_variant >(vec)));  
 }  
 
 template <class ValueType>
