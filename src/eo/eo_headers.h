@@ -138,12 +138,12 @@
 // #include <paradiseo/eo/eoEvolutionStrategy.h>   removed for a while - until eoGenOp is done
 
 // Utils
-#include <paradiseo/eo/utils/checkpointing"
+#include <paradiseo/eo/utils/eoCheckpoint_headers.h>
 #include <paradiseo/eo/utils/eoRealVectorBounds.h> // includes eoRealBounds.h
 #include <paradiseo/eo/utils/eoIntBounds.h>        // no eoIntVectorBounds
 
 // aliens
-#include <paradiseo/eo/other/external_eo"
+#include <paradiseo/eo/other/eoExternalEO.h>
 #include <paradiseo/eo/eoCounter.h>
 
 
