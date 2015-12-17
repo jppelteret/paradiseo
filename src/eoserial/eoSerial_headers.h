@@ -22,6 +22,6 @@ Authors:
 #ifndef __EOSERIAL_H__
 #define __EOSERIAL_H__
 
-#include <paradiseo/eoserial/eoSerial.h>
+#include "eoserial/eoSerial.h"
 
 #endif // __EOSERIAL_H__

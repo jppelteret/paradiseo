@@ -1,5 +1,5 @@
  /*
-<smp.h>
+<smp.h"
 Copyright (C) DOLPHIN Project-Team, INRIA Lille - Nord Europe, 2006-2012
 
 Alexandre Quemy
@@ -30,27 +30,27 @@ Contact: paradiseo-help@lists.gforge.inria.fr
 #ifndef SMP_H
 #define SMP_H
 
-#include <paradiseo/smp/MWModel.h>
-#include <paradiseo/smp/scheduler.h>
-#include <paradiseo/smp/islandModel.h>
-#include <paradiseo/smp/islandModelWrapper.h>
-#include <paradiseo/smp/island.h>
-#include <paradiseo/smp/abstractIsland.h>
-#include <paradiseo/smp/migPolicy.h>
-#include <paradiseo/smp/intPolicy.h>
-#include <paradiseo/smp/policyElement.h>
-#include <paradiseo/smp/islandNotifier.h>
-#include <paradiseo/smp/notifier.h>
+#include "smp/MWModel.h"
+#include "smp/scheduler.h"
+#include "smp/islandModel.h"
+#include "smp/islandModelWrapper.h"
+#include "smp/island.h"
+#include "smp/abstractIsland.h"
+#include "smp/migPolicy.h"
+#include "smp/intPolicy.h"
+#include "smp/policyElement.h"
+#include "smp/islandNotifier.h"
+#include "smp/notifier.h"
 
 // Topologies
-#include <paradiseo/smp/topology/topology.h>
-#include <paradiseo/smp/topology/complete.h>
-#include <paradiseo/smp/topology/ring.h>
-#include <paradiseo/smp/topology/star.h>
-#include <paradiseo/smp/topology/hypercubic.h>
-#include <paradiseo/smp/topology/mesh.h>
-#include <paradiseo/smp/topology/customBooleanTopology.h>
-#include <paradiseo/smp/topology/customBooleanTopology.h>
+#include "smp/topology/topology.h"
+#include "smp/topology/complete.h"
+#include "smp/topology/ring.h"
+#include "smp/topology/star.h"
+#include "smp/topology/hypercubic.h"
+#include "smp/topology/mesh.h"
+#include "smp/topology/customBooleanTopology.h"
+#include "smp/topology/customBooleanTopology.h"
 
 
 #endif

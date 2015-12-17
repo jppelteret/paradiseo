@@ -22,6 +22,6 @@ Authors:
 #ifndef __EO_MPI_HEADER__
 #define __EO_MPI_HEADER__
 
-#include <paradiseo/eompi/eoMpi.h>
+#include "eompi/eoMpi.h"
 
 #endif // __EO_MPI_HEADER__
