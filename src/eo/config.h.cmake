@@ -6,6 +6,9 @@
 /* gnuplot graphical display */
 #cmakedefine HAVE_GNUPLOT
 
+/* Enable MPI capabilities */
+#cmakedefine HAVE_MPI
+
 /* Enable C++11 random library */
 #cmakedefine HAVE_RANDOM
 

@@ -100,7 +100,16 @@ endif(EDO)
 ##################
 ## EOMPI Module ##
 ##################
-
+# Since EO requires knowledge about MPI, we set these flags before we configure it (EO)
+if(EOMPI)
+    find_package(MPI REQUIRED)
+    add_definitions(-DWITH_MPI)
+    set(CMAKE_CXX_COMPILE_FLAGS ${CMAKE_CXX_COMPILE_FLAGS} ${MPI_COMPILE_FLAGS})
+    set(CMAKE_CXX_LINK_FLAGS ${CMAKE_CXX_LINK_FLAGS} ${MPI_LINK_FLAGS})
+    # set(CMAKE_CXX_COMPILE_FLAGS "${CMAKE_CXX_COMPILE_FLAGS} -DWITH_MPI ${MPI_COMPILE_FLAGS}")
+    # set(CMAKE_CXX_LINK_FLAGS ${CMAKE_CXX_LINK_FLAGS} ${MPI_LINK_FLAGS})
+    # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DWITH_MPI") 
+endif(EOMPI)
 
 
 #####################################################################################
@@ -145,10 +154,6 @@ if(NOT EO_ONLY)
 
     ## EOMPI Module
     if(EOMPI)
-        find_package(MPI REQUIRED)
-        add_definitions(-DWITH_MPI)
-        set(CMAKE_CXX_COMPILE_FLAGS ${CMAKE_CXX_COMPILE_FLAGS} ${MPI_COMPILE_FLAGS})
-        set(CMAKE_CXX_LINK_FLAGS ${CMAKE_CXX_LINK_FLAGS} ${MPI_LINK_FLAGS})
         set(EOMPI_MODULE_NAME "EOMPI Module")
         #set(CMAKE_SOURCE_DIR ${EOMPI_SRC_DIR})
         add_subdirectory(${EOMPI_SRC_DIR})
